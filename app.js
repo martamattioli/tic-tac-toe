@@ -92,10 +92,10 @@ function init() {
     // console.log('TOT MOVES (urser turn): -->', moves);
     // console.log(`AVAIL MOVES: (User turn) ${availableMoves}`);
     // console.log(`USER MOVES so far ${userMoves}`);
+    checkWin(chosenShape);
     setTimeout(() => {
       computerTurn(moves.length);
     }, 2000);
-    checkWin(chosenShape);
   }
 
   function fillShape(e) {
